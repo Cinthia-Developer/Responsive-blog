@@ -1,29 +1,86 @@
 /* Inserta tu codigo aqui */
-*{
-    outline: 1px solid red;
-}
+
 body{
     background-color: dimgray;
     margin: 0;
-    padding: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: cursive;
+    
 }
-/*-------------------------header------------------*/
 .container{
     width: 800px;
     margin: auto;
 }
+/*-------------------------header------------------*/
 header{
     background-color: black;
+    overflow: hidden;
 }
 header img{
-    width: 200px;
+    width: 150px;
+    float: left;
 }
 header ul{
     list-style: none;
+    float: right;
 }
 header ul li{
     display: inline;
-    
+}
+header ul li a{
+   text-decoration: none;
+   color: white;
+   margin:  5px;
+   font-size: 10px;
+}
+header ul li:hover{
+    background-color: red;
+}
+
+/*-------------------------hero------------------*/
+.hero1{
+    background-image: url(../image/header-image.jpg);
+    background-size: cover;
+    height: 350px;
+}
+.cuadro{
+    width:50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+/*-------------------------columnas------------------*/
+.col-1, .col-2, .col-3{
+    width: 32.9%;
+    display: inline-block;
+    background-color:forestgreen;
+    text-align: center;
+    margin: 30px auto;
+}
+.imagen1, .imagen2, .imagen3{
+    background-size: cover;
+    height: 150px;
+}
+.imagen1{
+    background-image: url(../image/image7.jpg);
+}
+.imagen2{
+    background-image: url(../image/image3.jpg);
+}
+.imagen3{
+    background-image: url(../image/image2.jpg);
+}
+.columnas h3{
+    color: #f57a2d;
+}
+.columnas p{
+    color: white;
+    font-size: 12px;
 }
 /* Responsive */
 
