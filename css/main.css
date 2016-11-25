@@ -16,6 +16,9 @@ header{
     background-color: #1b1821;
     overflow: hidden;
 }
+h1{
+    font-size: 40px;
+}
 header img{
     width: 150px;
     float: left;
@@ -36,10 +39,13 @@ header ul li a{
 header ul li:hover{
     background-color: red;
 }
-h1{
-    font-size: 60px;
-    margin: 0;
+i{
+    color: white;
+    display: none;
+    float: right;
+    margin: 10px 30px;
 }
+
 
 /*-------------------------hero------------------*/
 .hero1{
@@ -51,12 +57,12 @@ h1{
     width:50%;
     margin: 20px auto;
     padding: 10px;
-    background-color: black;
-    opacity: 0.5;
+    height: 200px;
+    background-color: #1b1821;
     color: white;
     text-align: center;
     position: relative;
-    top: 30%;
+    top: 20%;
 }
 /*-------------------------columnas------------------*/
 .col-1, .col-2, .col-3{
@@ -124,6 +130,7 @@ input{
     border-radius: 5%;
     border: 2px solid #2c2735;
     color: white;
+    width: 80%;
 }
 .about{
     background-color: #1b1821;
@@ -140,6 +147,32 @@ label{
     align-content: left;
     padding: 8px;
 }
+/*-------------------------@media------------------*/
+/*Responsive */
+
+@media screen and (max-width:920px){
+    .container{
+        width: 100%;
+    }
+    .col-1, .col-2, .col-3, .col-8 {
+        width: 100%;
+        margin: 0 auto;
+        clear: both;
+    }
+    .imagen1, .imagen2, .imagen3{
+        height: 
+    }
+    i{
+        display: inline-block;
+    }
+    ul{
+        display: none;
+    }
+    .col-6{
+        display: none;
+    }
+    
+}
 
 /*-------------------------footer------------------*/
 footer{
@@ -151,17 +184,9 @@ footer{
     text-align: center;
     padding-top: 30px;
 }
+
 footer a{
     color: dimgray;
     text-decoration: none;
 }
-/*-------------------------@media------------------*/
-/*Responsive */
 
-@media screen and (max-width : 920px) {
-
-}
-
-@media screen and (max-width: 600px) {
-
-}
